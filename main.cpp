@@ -47,10 +47,11 @@ int main()
     }
 
     std::cout << "Date\tWeight" << std::endl; //headers
+
     //different for-loop, research it
     for (const auto& measurement : measurements)
     {
-        //iterating through, outputting all user inputs for weight and date once they exit while(true) using "q"
+        //iterating through, output all user inputs for weight & date once "while(true)" loop exited
         std::cout << std::put_time(localtime(&measurement.date), "%m/%d/%Y") << "\t"
              << measurement.weight << std::endl;
     }
